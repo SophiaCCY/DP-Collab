@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color:#e4f4f5;">
+    <div class="topHead">
+        <div class="logoBox">
+            <a href="index.html"><h1>DP Collab</h1></a>
+        </div>
+        <div class="loginBox">
+            <div class="loginLeft">
+                <a href="login.html">Login</a>/
+                <a href="register.html">Register</a>
+            </div>
+            <div class="loginRight">
+                <img src="./img/head.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="loginPage choosePage">
+        <div class="selectPart">
+            <span>Choose role:</span>
+            <label onclick="window.location.href='patient.html';"><input type="radio" name="identity" value="1"/>Patient</label>
+            <label onclick="window.location.href='doctor.html';"><input type="radio" name="identity" value="2" checked/>Doctor</label>
+        </div>
+        <div class="loginInput chooseBox">
+            <h2>Provide your details by</h2>
+            <div class="upload">
+                <span>Upload Certificate</span>
+                <input type="file">
+            </div>
+            <div>OR</div>
+            <div class="userName">
+                <span>Input GMC No.:</span>
+                <input class="input" placeholder="Input GMC No" type="text">
+            </div>
+        </div>
+        <div class="loginBtn" onclick="register()">Register</div>
+    </div>
+</body>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script>
+    function register(){
+        let check = 1;
+        $(".input").each(function (k,v){
+            if(!$(v).val()){
+                alert('please enter '+$(v).attr('placeholder'));
+                check = 0;
+                return false;
+            }
+        })
+        if(check){
+            window.location.href = 'personal-doctor.html';
+        }
+    }
+</script>
+</html>

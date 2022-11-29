@@ -1,0 +1,626 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+    margin-right: 3px;
+}
+.topHead{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+.logoBox h1{
+    font-size: 30px;
+}
+.logoBox a{
+    display: inline-block;
+}
+.loginRight{
+    width: 40px;
+    height: 40px;
+}
+.loginBox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.loginLeft{
+    margin-right: 10px;
+    color: #01c0c8;
+}
+.loginLeft a{
+    color: #01c0c8;
+}
+.loginLeft a:hover{
+    color: #00a0a6;
+}
+.loginRight img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.navBox{
+    width: 80%;
+    margin: 0 auto;
+}
+.navBig{
+    background-color: #01c0c8;
+}
+.navBox ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.navBox ul li a{
+    width: 200px;
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+}
+.banner img{
+    max-width: 100%;
+}
+.forumBox{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.searchLeft{
+    width: 15%;
+    text-align: center;
+}
+.searchRight{
+    width: 10%;
+    text-align: center; 
+}
+.searchLeft{
+    font-size: 20px;
+    line-height: 50px;
+}
+.searchMiddle{
+    width: 75%;
+    height: 50px;
+}
+.searchRight{
+    height: 50px;
+}
+.searchRight img{
+    max-height: 100%;
+}
+.searchMiddle input{
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+}
+.forumList{
+    padding-bottom: 40px;
+}
+.forumList>li{
+    background-color: #fff;
+    margin:25px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 8px 22px 2px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fLeft,.fRight{
+    padding: 15px 0px 0px 15px;
+    box-sizing: border-box;
+}
+.fRight{
+    width: 80%;
+}
+.fRight>h1{
+    font-size: 22px;
+}
+.fRight>p{
+    font-size: 16px;
+    color: #888;
+    margin-top: 10px;
+}
+.fLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+}
+.fLeft h1{
+    font-size: 22px;
+}
+.fLeft p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.forImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.searchBoxFix{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    background-color: #fff;
+}
+.splitBox{
+    margin-top: 45px;
+    box-sizing: border-box;
+    height: 107px;
+    overflow-y: auto;
+}
+.splitBox li{
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+.splitBox li:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.spLeft{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #eee;
+    margin-right: 10px;
+}
+.sendBox{
+    display: flex;
+    justify-content: space-around;
+}
+.sendBox input{
+    line-height: 60px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+.sendBox input:first-child{
+    width: 85%;
+}
+.sendBox input:last-child{
+    width: 15%;
+}
+.sendBox input::input-placeholder{
+	color:#ccc;
+}
+.sendBox input::-webkit-input-placeholder{
+	color:#ccc;
+}
+.sendBox input::-moz-input-placeholder{
+	color:#ccc;
+}
+.sendBox input::-ms-input-placeholder{
+	color:#ccc;
+}
+.spRight{
+    width: 80%;
+    margin-right: 10px;
+}
+.spRight p{
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 23px;
+}
+.spMore{
+    color: #008fe8;
+    cursor: pointer;
+}
+.loginPage{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 700px;
+    margin: 110px auto 0 auto;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 3px 8px 22px 2px rgb(0 0 0 / 6%);
+}
+.loginPage h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.loginInput{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.userName,.password{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.userName span,.password span{
+    font-size: 18px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 18%;
+    text-align: right;
+}
+.userName input,.password input{
+    font-size: 18px;
+    line-height: 40px;
+    width: 60%;
+}
+.userName a{
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+.loginBtn{
+    background-color: #01c0c8;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+    width: 20%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 18px;
+}
+.chooseBox .userName span{
+    width: 21%;
+}
+.chooseBox .userName{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.selectPart{
+    font-size: 22px;
+    background-color: #a2eaed;
+    padding: 15px 0;
+}
+.selectPart input{
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+.chooseBox .userName a{
+    background-color: #01c0c8;
+    color: #fff;
+    font-size: 18px;
+    padding: 3px;
+}
+.choosePage{
+    padding: 0;
+    overflow: hidden;
+}
+.choosePage .loginInput{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.choosePage .loginBtn{
+    margin-bottom: 30px;
+}
+.upload{
+    position: relative;
+    width: 146px;
+    margin: 10px auto;
+}
+.upload span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #01c0c8;
+    line-height: 24px;
+    color: #fff;
+    padding: 0 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
+.upload input{
+    opacity: 0;
+}
+.doctorList{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 8px 22px 2px rgb(0 0 0 / 6%);
+}
+.dlLeft{
+    width: 25%;
+    background-color: #00a0a6;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.dlLeft ul{
+    margin-top: 30px;
+}
+.current{
+    background-color: #a2eaed;
+    color: #333!important;
+}
+.dlLeft ul li{
+    line-height:48px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.dlLeft ul li p{
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 0px;
+    margin-top: 20px;
+}
+.dlLeft ul li select{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+.dlRight{
+    width: 75%;
+    padding: 30px;
+}
+.dlRight>p{
+    color: #999;
+}
+.dlRight ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+}
+.dlRight .doctor_box li:hover{
+    background-color: #999999;
+    color: white;
+}
+.dlImg{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin-right: 20px;
+}
+.doctor_img{
+    width: 100px;
+    height: 100px;
+}
+.dlInfo p{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.dlHead{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.dlHead img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.personList .dlLeft ul{
+    border-top: 1px dashed rgba(255, 255, 255, .5);
+}
+.personList .dlRight>p{
+    color: #333;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0 20px 0;
+    font-size: 18px;
+}
+.dlRight{
+    position: relative;
+}
+.iconBox{
+    position: absolute;
+    right: 30px;
+    top: 36px;
+}
+.iconBox a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.iconBox a img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.personList .dlRight .infoLeft{
+    font-size: 18px;
+    padding: 5px 20px;
+    background-color: #e4f4f5;
+    border: 1px solid #89dbde;
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+.personList .dlRight .infoRight{
+    font-size: 18px;
+}
+.testBox ul .infoLeft{
+    width: 250px!important;
+    text-align: left;
+}
+.testBox ul .infoRight{
+    display: flex;
+    justify-content: flex-end;
+}
+.testBox ul li{
+    justify-content: space-between!important;
+}
+.infoRcon{
+    margin-left: 30px;
+    font-size: 18px;
+    padding: 5px 20px;
+    background-color: #e4f4f5;
+    border: 1px solid #89dbde;
+}
+.dlRight ul{
+    position: relative;
+}
+.emergImg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 170px;
+}
+.emergImg img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.dlRight{
+    position: relative;
+    overflow-y: auto;
+}
+.emergCall{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.emergCall a{
+    display: inline-block;
+    padding: 10px 80px;
+    border: 1px solid #00a0a6;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.emergCall a:hover{
+    background-color: #00a0a6;
+    color: #fff;
+}
+.message{
+    background-color: #d5eff0;
+    border: 1px solid #00a0a6;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+.message p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.message p:last-child{
+    text-align: right;
+}
+.messageBox{
+    text-align: right;
+}
+.messageBox textarea{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-indent: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #00a0a6;
+    outline: none;
+}
+.update{
+    padding: 10px 20px;
+    background-color: #a2eaed;
+    border: 1px solid #00a0a6;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    margin-left: 84%;
+    margin-top: 10px;
+}
+.bookingBox{
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 10pxwa;
+}
+.bookingBox thead td{
+    text-align: right;
+}
+.bookingBox tbody td{
+    width: 13%;
+    text-align: right;
+    border: 1px solid #333;
+    height: 75px;
+    padding-right: 5px;
+    position: relative;
+    vertical-align: top;
+}
+.squre{
+    position: absolute;
+    top: 30px;
+    background-color: yellow;
+    height: 10px;
+    width: 100%;
+}
+.squre1{
+    position: absolute;
+    top: 45px;
+    background-color: #bd8bb4;
+    height: 10px;
+    width: 100%;
+}
+.squre2{
+    position: absolute;
+    top: 25px;
+    background-color: #91c9cd;
+    height: 10px;
+    width: 100%;
+}
+.squre3{
+    position: absolute;
+    top: 25px;
+    background-color: #b6b694;
+    height: 10px;
+    width: 100%;
+}
+#chat_box{
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#chat_box img{
+    width: 30px;
+    height: 30px;
+}

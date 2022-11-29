@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background-color:#e4f4f5;">
+    <div class="topHead">
+        <div class="logoBox">
+           <a href="index.html"><h1>DP Collab</h1></a> 
+        </div>
+        <div class="loginBox">
+            <div class="loginLeft">
+                <a href="login.html">Login</a>/
+                <a href="register.html">Register</a>
+            </div>
+            <div class="loginRight">
+                <img src="./img/head.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="doctorList">
+        <div class="dlLeft">
+            <p>list of diseases</p>
+            <ul class="nav">
+                <li class="current">Heart diseases</li>
+                <li>Diabetes</li>
+                <li>Skin diseases</li>
+                <li>Sleep disorder</li>
+                <li>Sport injury</li>
+            </ul>
+        </div>
+        <div class="dlRight">
+            <p>list of doctors you can choose</p>
+            <ul class="doctor_box">
+                <li>
+                    <div class="dlImg">
+                        <img class="doctor_img" src="./img/d1.png" alt="">
+                    </div>
+                    <div class="dlInfo">
+                        <p>Mike Smith</p>
+                        <p>MC12581</p>
+                        <p>Professor of internal medicine, chief physician, doctoral supervisor</p>
+                        <p>Very professional, very kind to patients</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dlImg">
+                        <img class="doctor_img" src="./img/d2.png" alt="">
+                    </div>
+                    <div class="dlInfo">
+                        <p>Maria Thea</p>
+                        <p>FC15735</p>
+                        <p>Doctor of medicine, associate chief physician</p>
+                        <p>Always ask us about our illness, and be earnest and kind to patients.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dlImg">
+                        <img class="doctor_img" src="./img/d3.png" alt="">
+                    </div>
+                    <div class="dlInfo">
+                        <p>Alina Gasser</p>
+                        <p>FC19768</p>
+                        <p>Doctor of Medicine, Postdoctoral fellow of French Academy of Sciences, chief physician.</p>
+                        <p>Visit patients frequently to check their condition, and treat patients seriously and professionally.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script>
+    $(".nav li").click(function (){
+        $(this).addClass('current').siblings().removeClass('current');
+    })
+    $(".doctor_box li").click(function (){
+        window.location.href = 'patient.html';
+    })
+</script>
+</html>
